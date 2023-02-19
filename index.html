@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family:'Courier New', Courier, monospace;
+      margin-top: 50vh;
+      /* font-weight: 500; */
+    }
+    .btn {
+      margin: 10px;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+    .btn:hover {
+      background-color: greenyellow;
+      color: white;
+      transition: 0.2s;
+      border-radius: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      <form action="">
+        <p>Hi Guys What is your name?</p>
+        <input type="text" id="tt"> Input Your Name</input>
+        <br>
+        <button type="submit" class="btn" onclick="Alert();">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+  let text = document.getElementById('tt');
+  console.log();
+  function Alert() {
+    alert("Hello " + text.value + " you guys so great!");
+  }
+</script>
+</html>
